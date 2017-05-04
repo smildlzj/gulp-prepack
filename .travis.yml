@@ -2,6 +2,8 @@ language: node_js
 node_js:
   - 7
   - 6
+before_install:
+  - npm config set depth 0
 script:
   - npm run test
   - nyc --silent npm run test
