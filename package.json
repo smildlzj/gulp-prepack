@@ -1,0 +1,28 @@
+{
+  "name": "gulp-prepack",
+  "version": "0.0.1",
+  "description": "A gulp plugin for prepack",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "gulp",
+    "prepack",
+    "facebook"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smildlzj/gulp-prepack.git"
+  },
+  "author": "luzhujun",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-util": "^3.0.8",
+    "prepack": "^0.2.0",
+    "through2": "^2.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^3.3.0"
+  }
+}
