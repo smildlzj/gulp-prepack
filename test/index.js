@@ -1,15 +1,15 @@
 'use strict';
-var assert = require('assert');
+var test = require('ava');
 var gutil = require('gulp-util');
 var plugin = require('../index');
 
-it('should prepack', function (cb) {
+test.cb('should prepack', function (t) {
   var stream = plugin();
 
   stream.on('data', function (file) {
-    assert.equal(file.relative, 'test.js');
-    assert.equal(file.contents.toString(), 's = "hello world";');
-    cb();
+    t.is(file.relative, 'test.js');
+    t.is(file.contents.toString(), 's = "hello world";');
+    t.end();
   });
 
   stream.write(new gutil.File({

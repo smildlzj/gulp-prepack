@@ -1,0 +1,10 @@
+{
+  "env": {
+    "test": {
+      "plugins": [
+        "istanbul"
+      ],
+      "sourceMaps": "inline"
+    }
+  }
+}

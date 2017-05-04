@@ -4,7 +4,7 @@
   "description": "A gulp plugin for prepack",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "cross-env NODE_ENV=test nyc --reporter=text ava --verbose --serial"
   },
   "keywords": [
     "gulp",
@@ -17,12 +17,30 @@
   },
   "author": "luzhujun",
   "license": "MIT",
+  "nyc": {
+    "include": [
+      "index.js",
+      "libs/**/*.js"
+    ],
+    "instrument": false,
+    "reporter": [
+      "text-lcov"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "sourceMap": false
+  },
   "dependencies": {
     "gulp-util": "^3.0.8",
     "prepack": "^0.2.0",
     "through2": "^2.0.3"
   },
   "devDependencies": {
-    "mocha": "^3.3.0"
+    "ava": "^0.19.1",
+    "babel-plugin-istanbul": "^4.1.3",
+    "babel-register": "^6.24.1",
+    "cross-env": "^4.0.0",
+    "nyc": "^10.3.0"
   }
 }
