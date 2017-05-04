@@ -1,6 +1,6 @@
 {
   "name": "gulp-prepack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A gulp plugin for prepack",
   "main": "index.js",
   "scripts": {
