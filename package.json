@@ -32,8 +32,9 @@
     "sourceMap": false
   },
   "dependencies": {
+    "fbjs": "^0.8.16",
     "gulp-util": "^3.0.8",
-    "prepack": "^0.2.0",
+    "prepack": "^0.2.36",
     "through2": "^2.0.3"
   },
   "devDependencies": {
